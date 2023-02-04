@@ -33,3 +33,9 @@ div {
 #app_form {
   border: dotted orangered 1px;
 }
+
+#root {
+  height: 80vw;
+  width:50vw;
+  border: black dotted .25rem
+}

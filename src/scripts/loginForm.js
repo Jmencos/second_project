@@ -26,11 +26,13 @@ const createForm = (fields) => {
   form.append(button);
   form.append(document.createElement('br'));
   form.append(createUser);
+  form.method = "POST"
   form.action = '/dashboard'
+  
   loginContainer.appendChild(form)
   return loginContainer ;
 }
 
-const loginForm = createForm(['Username', 'Password']);
+const loginForm = createForm(['username', 'password']);
 
 body.append(loginForm);
